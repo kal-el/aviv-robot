@@ -15,9 +15,8 @@ Because the storage is managed dynamically at runtime, the amount of time requir
 There’s another issue, however, and that’s the lifetime of an object. If you create an object on the stack or in static storage, the compiler determines how long the object lasts and can automatically destroy it. However, if you create it on the heap, the compiler has no knowledge of its lifetime. *In C++, the programmer must determine programmatically when to destroy the object, and then perform the destruction using the delete keyword*. As an alternative, the environment can provide a feature called a garbage collector that automatically discovers when an object is no longer in use and destroys it. Of course, writing programs using a garbage collector is much more convenient, but it requires that all applications must be able to tolerate the existence of the garbage collector and the overhead for garbage collection. This does not meet the design requirements of the C++ language and so it was not included, although third-party garbage collectors exist for C++_ .
 
 
-= Details =
+== Links utili ==
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * http://www.parashift.com/c++-faq-lite/freestore-mgmt.html#faq-16.11
+  * http://msdn.microsoft.com/en-us/library/h6227113%28VS.80%29.aspx
+  * http://www.cplusplus.com/doc/tutorial/dynamic/
